@@ -1,0 +1,53 @@
+<div class="mainNav">
+    <div class="menu">
+        <li class="options"><a href="{% url 'view' %}">View-All-Customers</a></li>
+        <li class="options"><a href="#">About-Us</a></li>
+        <li class="options"><a href="#">Privacy</a></li>
+        <li class="options"><a href="#">Contact</a></li>
+        <li class="options"><a href="#">Services</a></li>
+    </div>
+</div>
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/customer_details.css' %}">
+    <title>Details</title>
+</head>
+
+<body>
+
+    <div class="written">
+        <h2>
+            <header>Account Details of {{details.Name}}</header>
+        </h2>
+
+        <p>
+        <h4>
+            Name : &nbsp;{{details.Name}}<br><br>
+            Email : &nbsp;{{details.Email}}<br><br>
+            Account Number : &nbsp;{{details.Account_Number}}<br><br>
+            Current Balance : &nbsp;{{details.Current_Balance}}<br><br>
+            Phone Number : &nbsp;{{details.Phone_Number}}<br><br>
+            IFSC Code : &nbsp;{{details.IFSC_Code}}<br><br>
+            Address : &nbsp;{{details.Address}}<br><br>
+            Branch Code : &nbsp;{{details.Branch_Code}}<br><br>
+
+        </h4>
+        </p>
+    </div>
+    <h3>
+        <li><a href="{% url 'transfer' %}">Transfer Money</a></li>
+    </h3>
+    <footer id="mainFooter">
+        
+            All Rights Reserved&#8482;
+        
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<div class="mainNav">
+    <div class="menu">
+        <li class="options"><a href="{% url 'home' %}">Home</a></li>
+        <li class="options"><a href="#">About-Us</a></li>
+        <li class="options"><a href="#">Privacy</a></li>
+        <li class="options"><a href="#">Contact</a></li>
+        <li class="options"><a href="#">Services</a></li>
+    </div>
+</div>
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/view.css' %}">
+    <title>Customers</title>
+</head>
+
+<body>
+    <div class="customer">
+        <h2>List Of All Active Customers</h2>
+    </div>
+    <div class="info">
+
+        {% for acc in accs %}
+        <ol type="1">
+            <h4>
+                <li>{{acc.Name}}</li>
+            </h4>
+            <p>{{acc.Email}}</p>
+            <h5>
+                <p class="abc"><a href="{% url 'customer_details' acc.id %}">View Details</a></p>
+            </h5>
+            <br>
+        </ol>
+        {% endfor %}
+    </div>
+    <footer id="mainFooter">
+        <h3>All Rights Reserved&#8482;</h3>
+    </footer>
+</body>
+
+</html>

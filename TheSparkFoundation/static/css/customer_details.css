@@ -1,0 +1,57 @@
+.menu {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    background-color: #ccc;
+    word-spacing: 12px;
+    padding: 8px;
+    color: black;
+}
+.mainNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;  /* Body text goes over the top of fixed nav bar* -- solved*/
+
+}
+.menu li {
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    
+}
+.written h2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: teal;
+}
+.written h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 10px 10px 10px;
+    font-style: italic;
+    background-color: beige;
+}
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    background-color:beige;
+    font-style: italic;
+}
+#mainFooter {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 106px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.menu li :hover{
+    background-color: yellow;
+}
